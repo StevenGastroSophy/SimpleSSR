@@ -1,0 +1,207 @@
+.marked {
+  overflow-x: hidden;
+  padding-bottom: 104px;
+}
+
+ul.form {
+  position:relative;
+  background:#fff;
+  width:100%;
+  margin:auto;
+  padding:0;
+  list-style: none;
+  overflow:hidden;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;	
+  
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.1);	
+}
+
+.form li a {
+  width:100%;
+  padding-left:20px;
+  height:50px;
+  line-height:50px;
+  display:block;
+  overflow:hidden;
+  position:relative;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:14px;
+  color:#686868;
+  
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  -o-transition:all 0.2s linear;
+  transition:all 0.2s linear;		
+  box-sizing: content-box;	
+}
+
+.form li a:hover {
+  background:#efefef;
+}
+
+.form li:nth-child(4n+1) a {
+  border-left:5px solid #008747;
+}
+
+.form li:nth-child(4n+2) a {
+    border-left:5px solid #fecf54;
+}
+  
+.form li:nth-child(4n+3) a {
+    border-left:5px solid #cf2130;
+}
+
+.form li:nth-child(4n) a {
+    border-left:5px solid #dde2d5;
+}	
+
+.form li:first-child a:hover, .form li:first-child a {
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.form li:last-child a:hover, .form li:last-child a {
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.form li.selected a {
+  background:#efefef;
+}
+
+.mtNav {
+  margin-top: 20px;
+}
+
+.navCtrl {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navBar {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    height: 100vh;
+    padding-top: 60px;
+    background-color: rgb(255, 255, 255, .8);
+  }
+
+  .navBar.show {
+    display: block;
+  }
+
+  .navBarShow-enter{
+    opacity: 0;
+  }
+  .navBarShow-enter-active{
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+  
+  }
+  .navBarShow-enter-done{
+    opacity: 1;
+  }
+  .navBarShow-exit{
+    display: block !important;
+    opacity: 1;
+  }
+  .navBarShow-exit-active{
+    display: block !important;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  
+  }
+  .navBarShow-exit-done{
+    opacity: 0;
+  }
+
+  .navCtrl {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 44px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .xburger {
+    position: relative;
+    top: 0;
+    left: calc(50% - 6vw);
+    width: 12vw;
+    height: 12vw;
+    cursor: pointer;
+    font-size: 5vmax;
+  }
+  .xburger.xburger--open .xburger__patty {
+    opacity: 0;
+  }
+  .xburger.xburger--open .xburger__bread:first-of-type::before {
+    transform: rotate(45deg) translate(1.2426406871vw);
+  }
+  .xburger.xburger--open .xburger__bread:first-of-type::after {
+    transform: rotate(-45deg) translate(-1.2426406871vw);
+  }
+  .xburger.xburger--open .xburger__bread:last-of-type::before {
+    transform: rotate(-45deg) translate(1.2426406871vw);
+  }
+  .xburger.xburger--open .xburger__bread:last-of-type::after {
+    transform: rotate(45deg) translate(-1.2426406871vw);
+  }
+  .xburger .xburger__patty {
+    left: 0;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 1.2vw;
+    border-radius: 4vw;
+    transition: 0.8s ease-in-out;
+    background: #ff5f16;
+    opacity: 0.7;
+  }
+  .xburger .xburger__bread::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 1.2vw;
+    border-radius: 4vw 0 0 4vw;
+    transition: 0.8s ease-in-out;
+    background: #ff5f16;
+    opacity: 0.7;
+  }
+  .xburger .xburger__bread::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 1.2vw;
+    border-radius: 0 4vw 4vw 0;
+    transition: 0.8s ease-in-out;
+    background: #ff5f16;
+    opacity: 0.7;
+  }
+  .xburger .xburger__bread:first-of-type {
+    left: 0;
+    position: relative;
+    top: calc(45% - 3vw);
+  }
+  .xburger .xburger__bread:last-of-type {
+    left: 0;
+    position: relative;
+    top: calc(45% - -3vw);
+  }
+}
