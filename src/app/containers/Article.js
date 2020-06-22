@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
+import MainHeader from '../components/MainHeader';
 import Marked from '../components/Marked';
 import NavBar from '../components/NavBar';
 import getArticleByCode from '../components/articles/getArticleByCode';
@@ -22,16 +23,19 @@ class Article extends Component {
     const text = getArticleByCode(code);
 
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-7 col-sm-offset-1">
-            <Marked text={text} />
-          </div>
-          <div className="mtNav col-sm-4 pull-right text-left">
-            <NavBar currentCode={code} history={history} />
+      <Fragment>
+        <MainHeader history={history} />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-7 col-sm-offset-1">
+              <Marked text={text} />
+            </div>
+            <div className="mtNav col-sm-4 pull-right text-left">
+              <NavBar currentCode={code} history={history} />
+            </div>
           </div>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }
