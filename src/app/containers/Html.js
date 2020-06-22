@@ -20,6 +20,7 @@ class Html extends Component {
           <meta httpEquiv="x-ua-compatible" content="IE=edge" />
           <link rel="stylesheet" href={`${CSS_URL}bootstrap.css`} />
           <link rel="stylesheet" href={`${CSS_URL}index.css`} />
+          <link rel="stylesheet" href={`${CSS_URL}darkMarkdown.css`} />
           <link rel="stylesheet" href={`${CSS_URL}App.css`} />
           <link rel="stylesheet" href={`${CSS_URL}Article.css`} />
         </head>
