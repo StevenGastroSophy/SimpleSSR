@@ -6,11 +6,11 @@ body {
   background-color: rgb(30, 33, 38, 1); /* #1e2126 */
 }
 
-h1 {
+.darkMarkdown h1 {
   color: rgb(254, 179, 48, 1); /* #feb330 */
 }
 
-hr {
+.darkMarkdown hr {
   height: .25em;
   padding: 0;
   margin-top: 24px;
@@ -20,31 +20,89 @@ hr {
   border-top: 0;
 }
 
-a {
+.darkMarkdown a {
   color: rgb(102, 153, 204, 1); /* #6699cc */
 }
 
-p {
+.darkMarkdown p {
   color: rgb(221, 221, 221, 1); /* #dddddd */
 }
 
-code {
+.darkMarkdown code {
   color: rgb(223, 223, 223, 1); /* #dfdfdf */
   background-color: rgb(66, 74, 85, 1); /* #424a55 */
 }
 
-pre {
+.darkMarkdown p,
+.darkMarkdown blockquote,
+.darkMarkdown ul,
+.darkMarkdown ol,
+.darkMarkdown dl, 
+.darkMarkdown table,
+.darkMarkdown pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.darkMarkdown pre {
   background-color: rgb(30, 30, 30, 1); /* #1e1e1e */
   border: 1px solid rgb(85, 85, 85, 1); /* #555555 */
   color: rgb(223, 223, 223, 1); /* #dfdfdf */
 }
 
-pre code {
+.darkMarkdown pre code {
   background: transparent;
 }
 
-blockquote {
+.darkMarkdown blockquote {
   color: rgb(221, 221, 221, 1); /* #dddddd */
   border-left-color: rgb(119, 119, 119, 1); /* #777777 */
   font-size: 16px;
+}
+
+.darkMarkdown table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.darkMarkdown table tr {
+  border-top: 1px solid rgb(204, 204, 204, 1); /* #cccccc */
+  background-color: rgb(30, 30, 30, 1); /* #1e1e1e */
+  border-color: rgb(98, 98, 98, 1); /* #626262 */
+}
+
+.darkMarkdown table th {
+  font-weight: bold;
+  text-align: left;
+}
+
+.darkMarkdown table tr th {
+  color: rgb(100, 181, 246, 1); /* #64B5F6 */
+}
+
+.darkMarkdown table tr td {
+  color: rgb(221, 221, 221, 1); /* #dddddd */
+}
+
+.darkMarkdown table th,
+.darkMarkdown table td {
+  padding: 6px 13px;
+  border: none;
+  border-color: rgb(98, 98, 98, 1); /* #626262 */
+}
+
+.darkMarkdown table tr th:first-child,
+.darkMarkdown table tr td:first-child {
+  border-left: 1px solid rgb(98, 98, 98, 1); /* #626262 */
+}
+
+.darkMarkdown table tr:last-child,
+.darkMarkdown table tr td:last-child {
+  border-bottom: 1px solid rgb(98, 98, 98, 1); /* #626262 */
 }
