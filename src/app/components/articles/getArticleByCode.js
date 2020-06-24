@@ -1,3 +1,4 @@
+import art20200616000 from './js/art20200616000';
 import art20200616001 from './js/art20200616001';
 import art20200616002 from './js/art20200616002';
 import art20200616003 from './js/art20200616003';
@@ -11,7 +12,7 @@ const getArticleByCode = (code) => {
     case 'art20200616003': return art20200616003;
     case 'art20200616004': return art20200616004;
     case 'art20200616005': return art20200616005;
-    default: return art20200616001
+    default: return art20200616000
   }
 }
 
