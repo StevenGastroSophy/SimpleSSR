@@ -19,7 +19,7 @@ class MainHeader extends Component {
       <div className="container mainHeader">
         <div className="row">
           <div onClick={() => {this.handleTurnPage("/");}} className="col-xs-4 text-center">Home</div>
-          <div onClick={() => {this.handleTurnPage("/article/art20200616001");}} className="col-xs-4 text-center">SSR</div>
+          <div onClick={() => {this.handleTurnPage("/article/");}} className="col-xs-4 text-center">SSR</div>
           <div onClick={() => {this.handleTurnPage("/about");}} className="col-xs-4 text-center">About</div>
         </div>
       </div>
