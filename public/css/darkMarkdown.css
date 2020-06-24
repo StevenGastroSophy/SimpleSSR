@@ -6,8 +6,21 @@ body {
   background-color: rgb(30, 33, 38, 1); /* #1e2126 */
 }
 
+.darkMarkdown h1,
+.darkMarkdown h2,
+.darkMarkdown h3,
+.darkMarkdown h4,
+.darkMarkdown h5,
+.darkMarkdown h6 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 .darkMarkdown h1 {
   color: rgb(254, 179, 48, 1); /* #feb330 */
+  padding-bottom: .3em;
+  font-size: 2em;
+  border-bottom: 1px solid rgb(119, 119, 119, 1); /* #777777 */
 }
 
 .darkMarkdown hr {
