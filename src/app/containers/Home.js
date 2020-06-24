@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+
+import MainHeader from '../components/MainHeader';
 
 class Home extends Component {
   constructor(props) {
@@ -9,29 +11,13 @@ class Home extends Component {
   render() {
     const {
       app,
-      match,
+      history,
     } = this.props;
-    const {
-      IMAGE_URL,
-    } = app;
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={`${IMAGE_URL}logo.svg`} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Fragment>
+        <MainHeader history={history} />
+      </Fragment>
     );
   }
 }

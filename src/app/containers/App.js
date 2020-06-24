@@ -18,7 +18,7 @@ const App = ({ app, hostname }) => {
         component={renderHome}
       />
       <Route
-        path={`/article/:code`}
+        path={`/article/:code?`}
         component={renderArticle}
       />
       <Route
