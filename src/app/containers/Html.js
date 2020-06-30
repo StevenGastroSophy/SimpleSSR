@@ -19,9 +19,9 @@ class Html extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta httpEquiv="x-ua-compatible" content="IE=edge" />
           <link rel="stylesheet" href={`${CSS_URL}bootstrap.css`} />
+          <link rel="stylesheet" href={`${CSS_URL}react-image-lightbox.css`} />
           <link rel="stylesheet" href={`${CSS_URL}index.css`} />
           <link rel="stylesheet" href={`${CSS_URL}darkMarkdown.css`} />
-          <link rel="stylesheet" href={`${CSS_URL}App.css`} />
           <link rel="stylesheet" href={`${CSS_URL}Article.css`} />
         </head>
         <body>
