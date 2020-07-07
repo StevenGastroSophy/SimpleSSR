@@ -25,6 +25,12 @@ const NavBar = (props) => {
         <div className={`navBar${isShow ? " show" : ""}`}>
           <ul className="form">
             <Item
+              code ={""}
+              text={"前情提要"}
+              currentCode={currentCode}
+              history={history}
+            />
+            <Item
               code ={"art20200616001"}
               text={"建立 Express server"}
               currentCode={currentCode}
@@ -50,7 +56,7 @@ const NavBar = (props) => {
             />
             <Item
               code ={"art20200616005"}
-              text={"心得"}
+              text={"總結"}
               currentCode={currentCode}
               history={history}
             />

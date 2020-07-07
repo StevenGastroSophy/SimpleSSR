@@ -6,7 +6,7 @@ const XBurger = (props) => {
   } = props;
 
   return (
-    <div className={`xburger${isActive ? " xburger--open" : ""}`}>
+    <div className={`cursorPointer xburger${isActive ? " xburger--open" : ""}`}>
       <div className="xburger__bread"></div>
       <div className="xburger__patty"></div>
       <div className="xburger__bread"></div>

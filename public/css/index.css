@@ -12,7 +12,54 @@ code {
     monospace;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
 .mainHeader {
   height: 60px;
   line-height: 60px;
+}
+
+.flexContainerIntro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexLeftIntro, .flexRightIntro {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flexLeftIntro {
+    width: 40%;
+  }
+
+  .flexRightIntro {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.lead {
+  font-weight: 300;
+  color: rgb(171, 178, 191, 1); /* #abb2bf */
+  font-size: 22px;
+  line-height: 35.2px;
+}
+
+.lead h1 {
+  font-size: 40px;
+  line-height: 56px;
+}
+
+.introStart {
+  display: inline-block;  
+  font-size: 20px;
+  padding: 15px 45px;
+  background-color: rgb(254, 179, 48, 1); /* #feb330 */
+  color: rgb(30, 33, 38, 1); /* #1e2126 */
+  white-space: nowrap;
 }

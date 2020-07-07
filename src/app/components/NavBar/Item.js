@@ -23,7 +23,7 @@ class Item extends Component {
       currentCode,
     } = this.props;
     return (
-      <li className={(currentCode === code) ? "selected" : "" } onClick={this.handleTurnPage}><a>{text}</a></li>
+      <li className={`cursorPointer ${(currentCode === code) ? "selected" : ""}`} onClick={this.handleTurnPage}><a>{text}</a></li>
     );
   }
 }

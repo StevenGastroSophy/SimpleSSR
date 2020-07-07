@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react';
 import MainHeader from '../components/MainHeader';
 import Marked from '../components/Marked';
 import NavBar from '../components/NavBar';
-import getArticleByCode from '../components/articles/getArticleByCode';
+import getArticleByCode from '../components/Articles/getArticleByCode';
 
 class Article extends Component {
   constructor(props) {
