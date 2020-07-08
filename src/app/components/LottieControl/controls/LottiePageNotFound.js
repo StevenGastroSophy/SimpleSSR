@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import Lottie from 'react-lottie';
 
-import * as aniProgramming from '../json/17343-programming.json';
+import * as aniPageNotFound from '../json/lf30_editor_d4yCij.json';
  
-const LottieProgrammer = () => {
+const LottiePageNotFound = () => {
 
-    const animationData = aniProgramming;
+    const animationData = aniPageNotFound;
 
     const defaultOptions = {
       loop: true,
@@ -27,4 +27,4 @@ const LottieProgrammer = () => {
     )
 }
 
-export default LottieProgrammer;
+export default LottiePageNotFound;

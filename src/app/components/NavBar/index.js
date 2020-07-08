@@ -3,6 +3,7 @@ import { CSSTransition } from 'react-transition-group'
 
 import Item from './Item';
 import XBurger from './XBurger';
+import getTitleByCode from './getTitleByCode';
 
 const NavBar = (props) => {
   const {
@@ -26,37 +27,37 @@ const NavBar = (props) => {
           <ul className="form">
             <Item
               code ={""}
-              text={"前情提要"}
+              text={getTitleByCode("")}
               currentCode={currentCode}
               history={history}
             />
             <Item
               code ={"art20200616001"}
-              text={"建立 Express server"}
+              text={getTitleByCode("art20200616001")}
               currentCode={currentCode}
               history={history}
             />
             <Item
               code ={"art20200616002"}
-              text={"改裝成 React SPA server"}
+              text={getTitleByCode("art20200616002")}
               currentCode={currentCode}
               history={history}
             />
             <Item
               code ={"art20200616003"}
-              text={"加上 React router"}
+              text={getTitleByCode("art20200616003")}
               currentCode={currentCode}
               history={history}
             />
             <Item
               code ={"art20200616004"}
-              text={"改裝成 React SSR server"}
+              text={getTitleByCode("art20200616004")}
               currentCode={currentCode}
               history={history}
             />
             <Item
               code ={"art20200616005"}
-              text={"總結"}
+              text={getTitleByCode("art20200616005")}
               currentCode={currentCode}
               history={history}
             />

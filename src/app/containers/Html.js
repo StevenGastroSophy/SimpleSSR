@@ -11,6 +11,7 @@ class Html extends Component {
       PORT = 8080,
       STATIC_URL = `http://localhost:${PORT}/static/`,
       CSS_URL = `http://localhost:${PORT}/static/css/`,
+      IMAGE_URL = `http://localhost:${PORT}/static/image/`,
     } =  process.env;
 
     return (
@@ -23,6 +24,7 @@ class Html extends Component {
           <link rel="stylesheet" href={`${CSS_URL}index.css`} />
           <link rel="stylesheet" href={`${CSS_URL}darkMarkdown.css`} />
           <link rel="stylesheet" href={`${CSS_URL}Article.css`} />
+          <link rel="shortcut icon" href={`${IMAGE_URL}favicon.ico`} />
         </head>
         <body>
           <div id="content" dangerouslySetInnerHTML={{ __html: content }} />
