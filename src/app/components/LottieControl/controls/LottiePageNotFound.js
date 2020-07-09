@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Lottie from 'react-lottie';
 
-import * as aniPageNotFound from '../json/lf30_editor_d4yCij.json';
+import * as aniPageNotFound from '../json/lf30_editor_ywZC7Y.json';
  
 const LottiePageNotFound = () => {
 
