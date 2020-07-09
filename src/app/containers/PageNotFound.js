@@ -33,8 +33,10 @@ class PageNotFound extends Component {
           <link rel="canonical" href={`${app.MAIN_URL}404`} />
         </Helmet>
         <MainHeader history={history} />
-        <div className="container">
-          <LottiePageNotFound />
+        <div className="pageNotFoundContainer">
+          <div className="pageNotFoundWrapper">
+            <LottiePageNotFound />
+          </div>
         </div>
       </Fragment>
     );
